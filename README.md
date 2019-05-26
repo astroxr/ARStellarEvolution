@@ -1,6 +1,8 @@
 # ARStellarEvolution
 Description: AR apps that visualize stellar evolution
 
+Problems:
+
 For the time being, whenever I put animation on the objects, the AR camera
 on my phone will give me a black background as seen in the game mode in Unity.
 I am still trying to figure out what causes the black background problem.
