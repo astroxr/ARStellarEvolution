@@ -1,6 +1,9 @@
 # ARStellarEvolution
 Description: AR apps that visualize stellar evolution
 
+The src file is the code for Android Studio,
+other files are code for Unity.
+
 Problems:
 
 For the time being, whenever I put animation on the objects, the AR camera
