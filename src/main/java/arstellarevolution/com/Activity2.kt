@@ -12,8 +12,8 @@ class Activity2 : AppCompatActivity() {
         setContentView(R.layout.activity_2)
 
         //initialize variables
-        val images = arrayOf(R.drawable.abc_action_bar_item_background_material,
-            R.drawable.lowmassstar,R.drawable.redsupergiant)
+        val images = arrayOf(R.drawable.nebulacloud,
+            R.drawable.lowmassstar,R.drawable.redgiant,R.drawable.whitedwarf)
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
 
         //change view as seek bar changes
@@ -40,7 +40,7 @@ class Activity2 : AppCompatActivity() {
                         imageView.setImageResource(images[0])
                     }else if (progress == 4){
                         textView.text = "Phase 5"
-                        imageView.setImageResource(images[0])
+                        imageView.setImageResource(images[3])
                     }
                 }
             }

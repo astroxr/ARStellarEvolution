@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val aveStar = findViewById<Button>(R.id.aveStarButton)
         val massStar = findViewById<Button>(R.id.massStarButton)
         val aboutApp = findViewById<Button>(R.id.aboutAppButton)
+        val button = findViewById<Button>(R.id.button)
 
         // go to other activities
         aveStar.setOnClickListener{
@@ -27,8 +28,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         aboutApp.setOnClickListener{
-            val intent2 = Intent(this,Activity4::class.java)
-            startActivity(intent2)
+            val intent3 = Intent(this,Activity4::class.java)
+            startActivity(intent3)
+        }
+
+        button.setOnClickListener{
+            val intent4 = Intent(this,Activity5::class.java)
+            startActivity(intent4)
         }
     }
 }
