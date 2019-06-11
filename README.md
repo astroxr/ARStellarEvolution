@@ -18,5 +18,6 @@ Problems:
 1. Unity project still shows black background in android studio apps, but works fine independently.
 
 2. Do not have any idea how to import material from blender into unity. By the time being, 
-I just use particle system in unity.
+I just use particle system in unity. I really hope to get this done because I have done a
+detail "look" of the star, which will look very good in AR and for user experience.
 
