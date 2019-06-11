@@ -7,6 +7,7 @@ public class rotatenebula : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // rotate nebula (and star)
         transform.Rotate(0, 30*Time.deltaTime, 0);
     }
 }
