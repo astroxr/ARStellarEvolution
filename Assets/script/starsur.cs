@@ -18,11 +18,13 @@ public class starsur : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // increase the size of the star
         transform.localScale += new Vector3(Time.deltaTime * 0.0005f,
             Time.deltaTime * 0.0005f, Time.deltaTime * 0.0005f);
 
         if (transform.localScale.x > 0.004f)
         {
+            // change color of the star surface from blue to red
             if (starSurColor.r < 0.5)
             {
                 starSurColor.r += 0.25f * Time.deltaTime;
