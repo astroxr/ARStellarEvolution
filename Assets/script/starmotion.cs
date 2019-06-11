@@ -21,6 +21,7 @@ public class starmotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // change the color of the star from blue to red
         if (theNebula.nebulaSize == 0)
         {
             if (starColor.r < 1)
