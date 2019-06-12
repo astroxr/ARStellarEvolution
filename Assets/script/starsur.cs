@@ -23,7 +23,7 @@ public class starsur : MonoBehaviour
         transform.localScale += new Vector3(Time.deltaTime * 0.0005f,
             Time.deltaTime * 0.0005f, Time.deltaTime * 0.0005f);
 
-        if (transform.localScale.x > 0.004f)
+        if (transform.localScale.x > 0.004f && transform.localScale.x < 0.01f)
         {
             starSurSize = 0.004;
             if (starSurColor.r < 0.5)
@@ -39,9 +39,9 @@ public class starsur : MonoBehaviour
         if (transform.localScale.x > 0.01f)
         {
             transform.localScale = new Vector3(0, 0, 0);
+            starSurSize = 0.01;
             blackhole();
             enabled = false;
-            starSurSize = 0.01;
         }
     }
 
