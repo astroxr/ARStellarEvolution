@@ -4,11 +4,20 @@ Description: AR apps that visualize stellar evolution
 The src file is the code for Android Studio,
 other files are code for Unity.
 
+I have done 3 phases, which is evolution from stellar nebula to red supergiant.
+All animations have been done in c# script.
+In android studio apps, I added more pictures.
+
+I also export the simple sphere from blender because sphere in Unity is very low resolution.
+If you are wondering if this might be the cause of the black background in android studio, 
+I have tested using original sphere from unity, it also shows black background.
+
+
 Problems:
 
-For the time being, whenever I put animation on the objects, the AR camera
-on my phone will give me a black background as seen in the game mode in Unity.
-I am still trying to figure out what causes the black background problem.
+1. Unity project still shows black background in android studio apps, but works fine independently.
 
-I also have problem exporting materials from cycles in blender into Unity. For now,
-I just make a simple sphere with diffuse color in blender render.
+2. Do not have any idea how to import material from blender into unity. By the time being, 
+I just use particle system in unity. I really hope to get this done because I have done a
+detail "look" of the star, which will look very good in AR and for user experience.
+

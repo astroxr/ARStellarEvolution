@@ -46,7 +46,7 @@ public class star : MonoBehaviour
             nova1.SetActive(true);
             nova2.SetActive(true);
             nova3.SetActive(true);
-        } 
+        }
     }
-    
+
 }
