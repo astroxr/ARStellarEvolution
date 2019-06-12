@@ -8,11 +8,13 @@ public class starsur : MonoBehaviour
     public ParticleSystem myParticleSystem;
     public ParticleSystem.ColorOverLifetimeModule colorModule;
     public Color starSurColor = Color.black;
+    public double starSurSize;
 
     void Start()
     {
         myParticleSystem = GetComponent<ParticleSystem>();
         colorModule = myParticleSystem.colorOverLifetime;
+        starSurSize = 0;
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class starsur : MonoBehaviour
 
         if (transform.localScale.x > 0.004f)
         {
+            starSurSize = 0.004;
             if (starSurColor.r < 0.5)
             {
                 starSurColor.r += 0.25f * Time.deltaTime;
@@ -33,9 +36,17 @@ public class starsur : MonoBehaviour
             
         }
 
-        if (transform.localScale.x > 0.012f)
+        if (transform.localScale.x > 0.01f)
         {
-            transform.localScale = new Vector3(0.012f,0.012f,0.012f);
+            transform.localScale = new Vector3(0, 0, 0);
+            blackhole();
+            enabled = false;
+            starSurSize = 0.01;
         }
+    }
+
+    void blackhole()
+    {
+        //change to black hole
     }
 }
