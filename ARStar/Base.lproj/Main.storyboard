@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="59f-qg-JYE">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="AR Stellar Evolution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9V-TZ-zIr">
+                                <rect key="frame" x="74" y="230" width="226" height="32.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTh-2L-JSz">
+                                <rect key="frame" x="131" y="709" width="112" height="30"/>
+                                <state key="normal" title="About this app">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAboutApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dz0-4i-gEM"/>
+                                    <segue destination="oSV-1e-ohw" kind="show" id="L2f-CC-NAn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kL-YM-rNo">
+                                <rect key="frame" x="89" y="474" width="197" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Life Cyle of Massive Star"/>
+                                <connections>
+                                    <segue destination="AcY-E5-M47" kind="show" id="RaD-XA-yqv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDx-5i-DKg">
+                                <rect key="frame" x="89" y="396" width="197" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Life Cycle of Average Star"/>
+                                <connections>
+                                    <action selector="clickAveStar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kz-lt-W3p"/>
+                                    <segue destination="AJ9-p9-vJ5" kind="show" id="xtK-FU-ovm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wDx-5i-DKg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="1Of-Fb-57Y"/>
+                            <constraint firstItem="0kL-YM-rNo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="4ZU-RE-mqp"/>
+                            <constraint firstItem="0kL-YM-rNo" firstAttribute="top" secondItem="wDx-5i-DKg" secondAttribute="bottom" constant="45" id="6vc-Fp-PVb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D9V-TZ-zIr" secondAttribute="trailing" constant="75" id="9Rc-ml-ccQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CTh-2L-JSz" secondAttribute="bottom" constant="39" id="Kis-jJ-pF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0kL-YM-rNo" secondAttribute="trailing" constant="89" id="OmH-Bv-UM0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CTh-2L-JSz" secondAttribute="trailing" constant="132" id="cR8-JZ-him"/>
+                            <constraint firstItem="CTh-2L-JSz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="fVv-I5-rQS"/>
+                            <constraint firstItem="D9V-TZ-zIr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="o0E-Xg-nS6"/>
+                            <constraint firstItem="wDx-5i-DKg" firstAttribute="top" secondItem="D9V-TZ-zIr" secondAttribute="bottom" constant="133.66999999999999" id="rv0-6H-Su9"/>
+                            <constraint firstItem="CTh-2L-JSz" firstAttribute="top" secondItem="0kL-YM-rNo" secondAttribute="bottom" constant="173" id="v2M-Dd-2Ex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wDx-5i-DKg" secondAttribute="trailing" constant="89" id="y7q-cF-fhR"/>
+                            <constraint firstItem="D9V-TZ-zIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="yRv-TW-lQb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="OJt-1T-xdR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703.20000000000005" y="136.69950738916256"/>
+        </scene>
+        <!--Massive Star-->
+        <scene sceneID="X1r-Jm-may">
+            <objects>
+                <viewController title="Massive Star" id="AcY-E5-M47" customClass="MassiveStar" customModule="ARStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbx-tH-mbG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life Cyle of Massive Star" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Z-Ia-ydV">
+                                <rect key="frame" x="79" y="141" width="217" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phase 1: Nebula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbU-0d-jUr">
+                                <rect key="frame" x="16" y="195" width="343" height="21"/>
+                                <color key="textColor" red="0.18280563850000001" green="0.2222465189" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="iiK-xe-ICF">
+                                <rect key="frame" x="77" y="659" width="222" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider2:" destination="AcY-E5-M47" eventType="valueChanged" id="OhF-qm-OxK"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="nebulacloud" translatesAutoresizingMaskIntoConstraints="NO" id="J38-8j-tZ6">
+                                <rect key="frame" x="85" y="511" width="206" height="142"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-dT-DfU">
+                                <rect key="frame" x="139" y="237" width="97" height="18"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Huge clouds of dust and gases exist in space" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aio-ur-zoT">
+                                <rect key="frame" x="68" y="233" width="239" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="hzt-8p-cw0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMg-Ai-p5I">
+                                <rect key="frame" x="191" y="715" width="158" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="See the life cycle in AR"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxt-dA-46I">
+                                <rect key="frame" x="28" y="715" width="140" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="See this phase in AR"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vxt-dA-46I" firstAttribute="top" secondItem="iiK-xe-ICF" secondAttribute="bottom" constant="26" id="2vh-pa-P5U"/>
+                            <constraint firstItem="iiK-xe-ICF" firstAttribute="top" secondItem="J38-8j-tZ6" secondAttribute="bottom" constant="6" id="4DL-RY-e6N"/>
+                            <constraint firstItem="qbU-0d-jUr" firstAttribute="leading" secondItem="pTr-ka-Gdy" secondAttribute="leading" constant="16" id="7J5-AB-HA9"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="trailing" secondItem="qbU-0d-jUr" secondAttribute="trailing" constant="16" id="Ba8-7G-rjk"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="bottom" secondItem="FMg-Ai-p5I" secondAttribute="bottom" constant="33" id="C3x-8U-Tft"/>
+                            <constraint firstItem="FMg-Ai-p5I" firstAttribute="leading" secondItem="Vxt-dA-46I" secondAttribute="trailing" constant="23" id="HTi-PX-6rK"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="trailing" secondItem="iiK-xe-ICF" secondAttribute="trailing" constant="78" id="KJk-2N-wwE"/>
+                            <constraint firstItem="J38-8j-tZ6" firstAttribute="top" secondItem="aio-ur-zoT" secondAttribute="bottom" constant="20" id="Pc9-IQ-eax"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="trailing" secondItem="HWk-dT-DfU" secondAttribute="trailing" constant="139" id="WOn-cb-bd5"/>
+                            <constraint firstItem="A9Z-Ia-ydV" firstAttribute="leading" secondItem="pTr-ka-Gdy" secondAttribute="leading" constant="79" id="Z7d-ce-jpA"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="trailing" secondItem="FMg-Ai-p5I" secondAttribute="trailing" constant="26" id="blm-Cq-Z8G"/>
+                            <constraint firstItem="aio-ur-zoT" firstAttribute="leading" secondItem="pTr-ka-Gdy" secondAttribute="leading" constant="68" id="coT-8e-kFn"/>
+                            <constraint firstItem="iiK-xe-ICF" firstAttribute="leading" secondItem="pTr-ka-Gdy" secondAttribute="leading" constant="79" id="fcU-H4-y6C"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="bottom" secondItem="Vxt-dA-46I" secondAttribute="bottom" constant="33" id="fqf-Gf-Cf6"/>
+                            <constraint firstItem="aio-ur-zoT" firstAttribute="top" secondItem="qbU-0d-jUr" secondAttribute="bottom" constant="17" id="hxs-ev-0fy"/>
+                            <constraint firstItem="HWk-dT-DfU" firstAttribute="top" secondItem="qbU-0d-jUr" secondAttribute="bottom" constant="21" id="jCL-8b-YvA"/>
+                            <constraint firstItem="A9Z-Ia-ydV" firstAttribute="top" secondItem="pTr-ka-Gdy" secondAttribute="top" constant="53" id="joQ-jv-RUv"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="trailing" secondItem="aio-ur-zoT" secondAttribute="trailing" constant="68" id="kXt-Bq-Rya"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="trailing" secondItem="J38-8j-tZ6" secondAttribute="trailing" constant="84" id="nYO-hp-gwM"/>
+                            <constraint firstItem="qbU-0d-jUr" firstAttribute="top" secondItem="A9Z-Ia-ydV" secondAttribute="bottom" constant="30" id="sUq-Nv-Abu"/>
+                            <constraint firstItem="Vxt-dA-46I" firstAttribute="leading" secondItem="pTr-ka-Gdy" secondAttribute="leading" constant="28" id="t0s-zf-nMD"/>
+                            <constraint firstItem="HWk-dT-DfU" firstAttribute="leading" secondItem="pTr-ka-Gdy" secondAttribute="leading" constant="139" id="tXO-we-2mw"/>
+                            <constraint firstItem="pTr-ka-Gdy" firstAttribute="trailing" secondItem="A9Z-Ia-ydV" secondAttribute="trailing" constant="79" id="vCT-5f-yjd"/>
+                            <constraint firstItem="J38-8j-tZ6" firstAttribute="leading" secondItem="pTr-ka-Gdy" secondAttribute="leading" constant="85" id="wwl-gT-6EP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pTr-ka-Gdy"/>
+                    </view>
+                    <connections>
+                        <outlet property="descPhase2" destination="aio-ur-zoT" id="IWq-0a-Ebo"/>
+                        <outlet property="phaseNumber2" destination="qbU-0d-jUr" id="ej7-H8-1a5"/>
+                        <outlet property="starImage2" destination="J38-8j-tZ6" id="6hL-ui-MDZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWu-rM-R3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="428.57142857142861"/>
+        </scene>
+        <!--About App-->
+        <scene sceneID="xVL-Nj-Ofh">
+            <objects>
+                <viewController title="About App" id="oSV-1e-ohw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q3M-Vl-AyY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application visualize stellar evolution of low mass and massive stars in augmented reality." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQh-0v-mwI">
+                                <rect key="frame" x="54" y="258" width="267" height="61"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Created by Muaz Burhanudin" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzB-rz-drd">
+                                <rect key="frame" x="91" y="583" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BQh-0v-mwI" firstAttribute="top" secondItem="ZUa-BA-JnE" secondAttribute="top" constant="170" id="0b2-nw-Iti"/>
+                            <constraint firstItem="ZUa-BA-JnE" firstAttribute="trailing" secondItem="BQh-0v-mwI" secondAttribute="trailing" constant="54" id="65N-j4-aa8"/>
+                            <constraint firstItem="DzB-rz-drd" firstAttribute="leading" secondItem="ZUa-BA-JnE" secondAttribute="leading" constant="91" id="EJ2-3A-fqe"/>
+                            <constraint firstItem="DzB-rz-drd" firstAttribute="top" secondItem="BQh-0v-mwI" secondAttribute="bottom" constant="264" id="cUh-G3-0RJ"/>
+                            <constraint firstItem="ZUa-BA-JnE" firstAttribute="trailing" secondItem="DzB-rz-drd" secondAttribute="trailing" constant="92" id="gd0-oh-MtJ"/>
+                            <constraint firstItem="ZUa-BA-JnE" firstAttribute="bottom" secondItem="DzB-rz-drd" secondAttribute="bottom" constant="174" id="huq-uE-Xf2"/>
+                            <constraint firstItem="BQh-0v-mwI" firstAttribute="leading" secondItem="ZUa-BA-JnE" secondAttribute="leading" constant="54" id="vGu-ha-tKe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZUa-BA-JnE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOt-kU-MTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="1130.5418719211823"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="98f-sT-C2E">
+            <objects>
+                <navigationController id="59f-qg-JYE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r8E-IN-7TU">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kCu-JG-6hD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sW-Dl-S7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1570" y="137"/>
+        </scene>
+        <!--Average Star-->
+        <scene sceneID="pUd-JF-blP">
+            <objects>
+                <viewController title="Average Star" id="AJ9-p9-vJ5" customClass="AverageStar" customModule="ARStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iUQ-d7-abb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phase 1: Nebula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2C-Wc-8b0">
+                                <rect key="frame" x="16" y="195" width="343" height="21"/>
+                                <color key="textColor" red="0.18280563851103127" green="0.22224651887000624" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life Cyle of Average Star" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXl-Yd-psQ">
+                                <rect key="frame" x="81" y="141" width="213" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="1P4-l5-iFh">
+                                <rect key="frame" x="74" y="672" width="222" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="AJ9-p9-vJ5" eventType="valueChanged" id="bfv-4A-jkO"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="nebulacloud" translatesAutoresizingMaskIntoConstraints="NO" id="zkG-4B-nrH">
+                                <rect key="frame" x="84" y="513" width="206" height="149"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Huge clouds of dust and gases exist in space" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMw-ck-KXu">
+                                <rect key="frame" x="68" y="233" width="239" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="2gX-OJ-d71"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhx-bL-5h0">
+                                <rect key="frame" x="196" y="717" width="156" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="See the life cycle in AR"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEp-sL-XSQ">
+                                <rect key="frame" x="28" y="717" width="140" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="See this phase in AR"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qXl-Yd-psQ" firstAttribute="top" secondItem="13j-VJ-UXv" secondAttribute="top" constant="53" id="294-EX-PHq"/>
+                            <constraint firstItem="u2C-Wc-8b0" firstAttribute="top" secondItem="qXl-Yd-psQ" secondAttribute="bottom" constant="30" id="4NG-Ko-XEi"/>
+                            <constraint firstItem="13j-VJ-UXv" firstAttribute="trailing" secondItem="qXl-Yd-psQ" secondAttribute="trailing" constant="81" id="9YM-kX-eoK"/>
+                            <constraint firstItem="zkG-4B-nrH" firstAttribute="leading" secondItem="13j-VJ-UXv" secondAttribute="leading" constant="84" id="H1B-Ez-3FA"/>
+                            <constraint firstItem="13j-VJ-UXv" firstAttribute="trailing" secondItem="Zhx-bL-5h0" secondAttribute="trailing" constant="23" id="O0J-z9-T1F"/>
+                            <constraint firstItem="qXl-Yd-psQ" firstAttribute="leading" secondItem="13j-VJ-UXv" secondAttribute="leading" constant="81" id="PlR-9h-Uhy"/>
+                            <constraint firstItem="Zhx-bL-5h0" firstAttribute="top" secondItem="1P4-l5-iFh" secondAttribute="bottom" constant="15" id="Vcx-Re-GAo"/>
+                            <constraint firstItem="13j-VJ-UXv" firstAttribute="trailing" secondItem="JMw-ck-KXu" secondAttribute="trailing" constant="68" id="YOj-3E-PAb"/>
+                            <constraint firstItem="13j-VJ-UXv" firstAttribute="trailing" secondItem="1P4-l5-iFh" secondAttribute="trailing" constant="81" id="ZaB-b3-gBd"/>
+                            <constraint firstItem="13j-VJ-UXv" firstAttribute="trailing" secondItem="zkG-4B-nrH" secondAttribute="trailing" constant="85" id="Zav-dq-dAq"/>
+                            <constraint firstItem="LEp-sL-XSQ" firstAttribute="leading" secondItem="13j-VJ-UXv" secondAttribute="leading" constant="28" id="c0K-ak-3UH"/>
+                            <constraint firstAttribute="bottom" secondItem="Zhx-bL-5h0" secondAttribute="bottom" constant="65" id="ccF-aG-oWf"/>
+                            <constraint firstItem="1P4-l5-iFh" firstAttribute="top" secondItem="zkG-4B-nrH" secondAttribute="bottom" constant="10" id="eTc-3H-aiX"/>
+                            <constraint firstItem="13j-VJ-UXv" firstAttribute="bottom" secondItem="LEp-sL-XSQ" secondAttribute="bottom" constant="31" id="izM-pE-eG1"/>
+                            <constraint firstItem="Zhx-bL-5h0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LEp-sL-XSQ" secondAttribute="trailing" constant="8" symbolic="YES" id="kYO-bi-0xp"/>
+                            <constraint firstItem="1P4-l5-iFh" firstAttribute="leading" secondItem="13j-VJ-UXv" secondAttribute="leading" constant="76" id="lsE-p1-HlN"/>
+                            <constraint firstItem="13j-VJ-UXv" firstAttribute="trailing" secondItem="u2C-Wc-8b0" secondAttribute="trailing" constant="16" id="oz3-sb-scM"/>
+                            <constraint firstItem="u2C-Wc-8b0" firstAttribute="leading" secondItem="13j-VJ-UXv" secondAttribute="leading" constant="16" id="qEN-7Q-xKm"/>
+                            <constraint firstItem="zkG-4B-nrH" firstAttribute="top" secondItem="JMw-ck-KXu" secondAttribute="bottom" constant="22" id="tdv-IV-3J0"/>
+                            <constraint firstItem="JMw-ck-KXu" firstAttribute="top" secondItem="u2C-Wc-8b0" secondAttribute="bottom" constant="17" id="wyI-vZ-tAZ"/>
+                            <constraint firstItem="JMw-ck-KXu" firstAttribute="leading" secondItem="13j-VJ-UXv" secondAttribute="leading" constant="68" id="xCL-on-UuK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="13j-VJ-UXv"/>
+                    </view>
+                    <connections>
+                        <outlet property="descPhase" destination="JMw-ck-KXu" id="KuW-gB-t71"/>
+                        <outlet property="phaseNumber" destination="u2C-Wc-8b0" id="vFG-YQ-R30"/>
+                        <outlet property="starImage" destination="zkG-4B-nrH" id="8XY-PD-fep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuE-ER-zXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-266.00985221674875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nebulacloud" width="960" height="540"/>
+    </resources>
+</document>
