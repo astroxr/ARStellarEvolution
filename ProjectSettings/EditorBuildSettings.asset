@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: dc4aaf99dbca74d7f9e4be51e272f3ac
+  - enabled: 1
+    path: Assets/Scenes/AveStarPage.unity
+    guid: 9d4029761ab0a4b04bf82cea860b3d09
+  - enabled: 1
+    path: Assets/Scenes/ARLifeAveStar.unity
+    guid: 24cb154dbeee04df7888f2def0f6720c
+  - enabled: 1
+    path: Assets/Scenes/MassStarPage.unity
+    guid: ab61a9b9bee054a6ba0c9f18627c1406
+  - enabled: 1
+    path: Assets/Scenes/ARLifeMassiveStar.unity
+    guid: e445abcfdffd9428aab7ccf3d2cdc20d
+  - enabled: 1
+    path: Assets/Scenes/StellarNebula.unity
+    guid: d00256dde84fe446c81fc842d5cad1f9
+  - enabled: 1
+    path: Assets/Scenes/AverageStar.unity
+    guid: 0a6502fb3a8c94a82aae72a0e3adddb6
+  - enabled: 1
+    path: Assets/Scenes/RedGiant.unity
+    guid: 1fb9e7a21c9fe4b5da0f0b2c57a7a58e
+  - enabled: 1
+    path: Assets/Scenes/SuperNova.unity
+    guid: 203a9e42c230244c2b9aedb4e2845291
+  - enabled: 1
+    path: Assets/Scenes/whiteDwarf.unity
+    guid: 362c1c07ae3de4300bf87135ce7b2d3f
+  - enabled: 1
+    path: Assets/Scenes/MassiveStar.unity
+    guid: dc6b9a6bb657e44a7941edb978f3f395
+  - enabled: 1
+    path: Assets/Scenes/RedSuperGiant.unity
+    guid: 06c89e0eec92141f3945d32f8d2a682f
+  - enabled: 1
+    path: Assets/Scenes/BlackHole.unity
+    guid: 96d3fffe2fdaf4810b05c7f0692fcf9a
+  m_configObjects: {}
