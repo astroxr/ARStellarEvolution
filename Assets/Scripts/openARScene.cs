@@ -2,44 +2,75 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class openARScene : MonoBehaviour
 {
     public TextMeshProUGUI phaseIndicator;
+    public Slider phaseSlider;
+
+    public void Start()
+    {
+        if (phaseSlider != null)
+        {
+            phaseSlider.value = PlayerPrefs.GetFloat("LatestSliderVal", 0);
+        }
+    }
 
     public void SeeARPhase()
     {
+        PlayerPrefs.SetFloat("LatestSliderVal", phaseSlider.value);
+
         if (phaseIndicator.text == "Phase 1: Stellar Nebula")
         {
-            Application.LoadLevel(5);
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            if (sceneIndex == 1)
+            {
+                SceneManager.LoadScene(5);
+            }
+            else
+            {
+                SceneManager.LoadScene(13);
+            }
+
         }
         else if (phaseIndicator.text == "Phase 2: Average Star")
         {
-            Application.LoadLevel(6);
+            SceneManager.LoadScene(6);
         }
         else if (phaseIndicator.text == "Phase 2: Massive Star")
         {
-            Application.LoadLevel(10);
+            SceneManager.LoadScene(10);
         }
         else if (phaseIndicator.text == "Phase 3: Red Giant")
         {
-            Application.LoadLevel(7);
+            SceneManager.LoadScene(7);
         }
         else if (phaseIndicator.text == "Phase 3: Red Super Giant")
         {
-            Application.LoadLevel(11);
+            SceneManager.LoadScene(11);
         }
         else if (phaseIndicator.text == "Phase 4: Supernova")
         {
-            Application.LoadLevel(8);
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            if (sceneIndex == 1)
+            {
+                SceneManager.LoadScene(8);
+            }
+            else
+            {
+                SceneManager.LoadScene(14);
+            }
+
         }
         else if (phaseIndicator.text == "Phase 5: White Dwarf")
         {
-            Application.LoadLevel(9);
+            SceneManager.LoadScene(9);
         }
         else if (phaseIndicator.text == "Phase 5: Black Hole")
         {
-            Application.LoadLevel(12);
+            SceneManager.LoadScene(12);
         }
     }
 }
