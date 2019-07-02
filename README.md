@@ -1,23 +1,17 @@
 # ARStellarEvolution
 Description: AR apps that visualize stellar evolution
 
-The src file is the code for Android Studio,
-other files are code for Unity.
+Highlights and updates so far:
 
-I have done 3 phases, which is evolution from stellar nebula to red supergiant.
-All animations have been done in c# script.
-In android studio apps, I added more pictures.
+1. The app is done completely in Unity, and I do not have any
+   problem exporting it into iOS (haven't tried Android yet).
 
-I also export the simple sphere from blender because sphere in Unity is very low resolution.
-If you are wondering if this might be the cause of the black background in android studio, 
-I have tested using original sphere from unity, it also shows black background.
+2. The functionality of the app is complete.
 
+3. Need to add more info about each phase in the life cycle
+   of the stars. 
 
-Problems:
+4. Need to make the app looks prettier.
 
-1. Unity project still shows black background in android studio apps, but works fine independently.
-
-2. Do not have any idea how to import material from blender into unity. By the time being, 
-I just use particle system in unity. I really hope to get this done because I have done a
-detail "look" of the star, which will look very good in AR and for user experience.
-
+5. Lastly need to redesign the stellar nebula and supernova
+   phase in AR.
