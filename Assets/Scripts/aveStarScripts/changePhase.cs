@@ -20,42 +20,21 @@ public class changePhase : MonoBehaviour
     {
         if (phaseNumber.text == "Phase 1: Stellar Nebula")
         {
-            phaseNumber.text = "Phase 2: Average Star";
-            phaseInfo.text = "The dust and gases are attracted to each other " +
-                "by their own gravity and getting denser and hotter until " +
-                "they fused together form a star.";
-            phaseImage.sprite = lowmassstar;
             phaseSlider.value = 1;
         }
 
         else if (phaseNumber.text == "Phase 2: Average Star")
         {
-            phaseNumber.text = "Phase 3: Red Giant";
-            phaseInfo.text = "After the star has run out of hydrogen, " +
-                "it will lose its hydrostatic equilibrium and it is going to " +
-                "collapse again until the heliums themselves will be used as " +
-                "an energy source, which will then expand the star even more.";
-            phaseImage.sprite = redgiant;
             phaseSlider.value = 2;
         }
 
         else if (phaseNumber.text == "Phase 3: Red Giant")
         {
-            phaseNumber.text = "Phase 4: Supernova";
-            phaseInfo.text = "The star expand so much that its outer " +
-                "atmosphere drifted out from the star in a process called " +
-                "supernova explosion.";
-            phaseImage.sprite = nebulacloud;
             phaseSlider.value = 3;
         }
 
-        else if (phaseNumber.text == "Phase 4: Supernova")
+        else if (phaseNumber.text == "Phase 4: Planetary Nebula")
         {
-            phaseNumber.text = "Phase 5: White Dwarf";
-            phaseInfo.text = "The remnants of the average star is the white " +
-                "dwarf, which is the core of the star. It is incredibly " +
-                "dense and hot.";
-            phaseImage.sprite = whitedwarf;
             phaseSlider.value = 4;
         }
 
@@ -65,40 +44,21 @@ public class changePhase : MonoBehaviour
     {
         if (phaseNumber.text == "Phase 5: White Dwarf")
         {
-            phaseNumber.text = "Phase 4: Supernova";
-            phaseInfo.text = "The star expand so much that its outer " +
-                "atmosphere drifted out from the star in a process called " +
-                "supernova explosion.";
-            phaseImage.sprite = nebulacloud;
             phaseSlider.value = 3;
         }
 
-        else if (phaseNumber.text == "Phase 4: Supernova")
+        else if (phaseNumber.text == "Phase 4: Planetary Nebula")
         {
-            phaseNumber.text = "Phase 3: Red Giant";
-            phaseInfo.text = "After the star has run out of hydrogen, " +
-                "it will lose its hydrostatic equilibrium and it is going to " +
-                "collapse again until the heliums themselves will be used as " +
-                "an energy source, which will then expand the star even more.";
-            phaseImage.sprite = redgiant;
             phaseSlider.value = 2;
         }
 
         else if (phaseNumber.text == "Phase 3: Red Giant")
         {
-            phaseNumber.text = "Phase 2: Average Star";
-            phaseInfo.text = "The dust and gases are attracted to each other " +
-                "by their own gravity and getting denser and hotter until " +
-                "they fused together form a star.";
-            phaseImage.sprite = lowmassstar;
             phaseSlider.value = 1;
         }
 
         else if (phaseNumber.text == "Phase 2: Average Star")
         {
-            phaseNumber.text = "Phase 1: Stellar Nebula";
-            phaseInfo.text = "Huge clouds of dust and gases exist in space.";
-            phaseImage.sprite = nebulacloud;
             phaseSlider.value = 0;
         }
 
@@ -109,40 +69,52 @@ public class changePhase : MonoBehaviour
         if (phaseSlider.value == 0)
         {
             phaseNumber.text = "Phase 1: Stellar Nebula";
-            phaseInfo.text = "Huge clouds of dust and gases exist in space.";
-            phaseImage.sprite = nebulacloud;
+            phaseInfo.text = "Huge clouds of hydrogen gas and dust exist" +
+            	" in space.The existing stars that are formed within it" +
+            	" energised the gas in the stellar nebula making it glows" +
+            	" brightly in space.";
+           phaseImage.sprite = nebulacloud;
         }
         else if (phaseSlider.value == 1)
         {
             phaseNumber.text = "Phase 2: Average Star";
-            phaseInfo.text = "The dust and gases are attracted to each other " +
-                "by their own gravity and getting denser and hotter until " +
-                "they fused together form a star.";
+            phaseInfo.text = "The gases are so huge that they " +
+                "attracted to each other by their own gravity and got " +
+                "denser until they fused together and formed a star." +
+                " If the combined mass of the gases are below eight" +
+                " solar masses, it will form an average star.In this phase," +
+                " hydrogen is fused into helium in a process called nuclear" +
+                " fussion where it produces heat energy and light.";
             phaseImage.sprite = lowmassstar;
         }
         else if (phaseSlider.value == 2)
         {
             phaseNumber.text = "Phase 3: Red Giant";
             phaseInfo.text = "After the star has run out of hydrogen, " +
-                "it will lose its hydrostatic equilibrium and it is going to " +
-                "collapse again until the heliums themselves will be used as " +
-                "an energy source, which will then expand the star even more.";
+                "it will lose its inner gas pressure (that it gets from" +
+                " nuclear fussion reaction) and it is going to " +
+                "collapse inward due to its own gravity until the heliums" +
+                " inside the star will started to fused with each other and" +
+                " produced more energy and expand the star even more to " +
+                "form a red giant.";
             phaseImage.sprite = redgiant;
         }
         else if (phaseSlider.value == 3)
         {
-            phaseNumber.text = "Phase 4: Supernova";
+            phaseNumber.text = "Phase 4: Planetary Nebula";
             phaseInfo.text = "The star expand so much that its outer " +
-                "atmosphere drifted out from the star in a process called " +
-                "supernova explosion.";
+                "atmosphere drifted out from the star and formed" +
+                " a planetary nebula.";
             phaseImage.sprite = nebulacloud;
         }
         else if (phaseSlider.value == 4)
         {
             phaseNumber.text = "Phase 5: White Dwarf";
-            phaseInfo.text = "The remnants of the average star is the white " +
+            phaseInfo.text = "After the outer atmosphere has drifted out" +
+                " to space, the remnants of it is the white " +
                 "dwarf, which is the core of the star. It is incredibly " +
-                "dense and hot.";
+                "dense and hot. Its mass is about the mass of the sun with only" +
+                "the size about the size of the earth.";
             phaseImage.sprite = whitedwarf;
         }
     }

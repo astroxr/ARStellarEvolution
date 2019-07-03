@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class openARScene : MonoBehaviour
+public class controlStarPage : MonoBehaviour
 {
     public TextMeshProUGUI phaseIndicator;
     public Slider phaseSlider;
@@ -51,26 +51,34 @@ public class openARScene : MonoBehaviour
         {
             SceneManager.LoadScene(11);
         }
+        else if (phaseIndicator.text == "Phase 4: Planetary Nebula")
+        {
+            SceneManager.LoadScene(8);
+        }
         else if (phaseIndicator.text == "Phase 4: Supernova")
         {
-            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-            if (sceneIndex == 1)
-            {
-                SceneManager.LoadScene(8);
-            }
-            else
-            {
-                SceneManager.LoadScene(14);
-            }
-
+            SceneManager.LoadScene(14);
         }
         else if (phaseIndicator.text == "Phase 5: White Dwarf")
         {
             SceneManager.LoadScene(9);
         }
-        else if (phaseIndicator.text == "Phase 5: Black Hole")
+        else if (phaseIndicator.text == "Phase 5: Neutron Star / Black Hole")
         {
             SceneManager.LoadScene(12);
         }
+    }
+
+    public void SeeLifeCycle(int sceneToChangeTo)
+    {
+        PlayerPrefs.SetFloat("LatestSliderVal", phaseSlider.value);
+
+        SceneManager.LoadScene(sceneToChangeTo);
+    }
+
+    public void GoToHome(int sceneToChangeTo)
+    {
+        PlayerPrefs.SetFloat("LatestSliderVal", 0);
+        SceneManager.LoadScene(sceneToChangeTo);
     }
 }

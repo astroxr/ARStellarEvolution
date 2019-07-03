@@ -5875,7 +5875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5916,8 +5916,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.999878, y: -617.0001}
-  m_SizeDelta: {x: 100, y: 500}
+  m_AnchoredPosition: {x: 7.999878, y: -724}
+  m_SizeDelta: {x: 100, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1534212889
 GameObject:
@@ -6021,7 +6021,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Info about average star
+  m_text: 'After the outer atmosphere has drifted out to space, the remnants of it
+    is the white dwarf, which is the core of the star. It is incredibly dense and
+    hot. Its mass is about the mass of the sun with only the size about the size of
+    the earth.
 
 '
   m_isRightToLeft: 0
@@ -6058,10 +6061,10 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
-  m_characterSpacing: 0
+  m_textAlignment: 520
+  m_characterSpacing: 10
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 30
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -6092,12 +6095,12 @@ MonoBehaviour:
   m_margin: {x: -316.4866, y: -18.16217, z: -587.1915, w: -381.40298}
   m_textInfo:
     textComponent: {fileID: 1730089866}
-    characterCount: 24
+    characterCount: 241
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 4
+    spaceCount: 49
+    wordCount: 49
     linkCount: 0
-    lineCount: 1
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

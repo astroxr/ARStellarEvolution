@@ -19,42 +19,21 @@ public class changePhaseMassStar : MonoBehaviour
     {
         if (phaseNumberMass.text == "Phase 1: Stellar Nebula")
         {
-            phaseNumberMass.text = "Phase 2: Massive Star";
-            phaseInfoMass.text = "The dust and gases are attracted to each other " +
-                "by their own gravity and getting denser and hotter until " +
-                "they fused together form a star.";
-            phaseImageMass.sprite = massivestar;
             phaseSliderMass.value = 1;
         }
 
         else if (phaseNumberMass.text == "Phase 2: Massive Star")
         {
-            phaseNumberMass.text = "Phase 3: Red Super Giant";
-            phaseInfoMass.text = "After the star has run out of hydrogen, " +
-                "it will lose its hydrostatic equilibrium and it is going to " +
-                "collapse again until the heliums themselves will be used as " +
-                "an energy source, which will then expand the star even more.";
-            phaseImageMass.sprite = redsupergiant;
             phaseSliderMass.value = 2;
         }
 
         else if (phaseNumberMass.text == "Phase 3: Red Super Giant")
         {
-            phaseNumberMass.text = "Phase 4: Supernova";
-            phaseInfoMass.text = "The star expand so much that its outer " +
-                "atmosphere drifted out from the star in a process called " +
-                "supernova explosion.";
-            phaseImageMass.sprite = nebulacloud;
             phaseSliderMass.value = 3;
         }
 
         else if (phaseNumberMass.text == "Phase 4: Supernova")
         {
-            phaseNumberMass.text = "Phase 5: Black Hole";
-            phaseInfoMass.text = "The remnants of the massive star is the " +
-                "black hole, which is the core of the star. It is incredibly " +
-                "dense and hot.";
-            phaseImageMass.sprite = blackhole;
             phaseSliderMass.value = 4;
         }
 
@@ -62,42 +41,23 @@ public class changePhaseMassStar : MonoBehaviour
 
     public void ChangeToPrevTextMass()
     {
-        if (phaseNumberMass.text == "Phase 5: Black Hole")
+        if (phaseNumberMass.text == "Phase 5: Neutron Star / Black Hole")
         {
-            phaseNumberMass.text = "Phase 4: Supernova";
-            phaseInfoMass.text = "The star expand so much that its outer " +
-                "atmosphere drifted out from the star in a process called " +
-                "supernova explosion.";
-            phaseImageMass.sprite = nebulacloud;
             phaseSliderMass.value = 3;
         }
 
         else if (phaseNumberMass.text == "Phase 4: Supernova")
         {
-            phaseNumberMass.text = "Phase 3: Red Super Giant";
-            phaseInfoMass.text = "After the star has run out of hydrogen, " +
-                "it will lose its hydrostatic equilibrium and it is going to " +
-                "collapse again until the heliums themselves will be used as " +
-                "an energy source, which will then expand the star even more.";
-            phaseImageMass.sprite = redsupergiant;
             phaseSliderMass.value = 2;
         }
 
         else if (phaseNumberMass.text == "Phase 3: Red Super Giant")
         {
-            phaseNumberMass.text = "Phase 2: Massive Star";
-            phaseInfoMass.text = "The dust and gases are attracted to each other " +
-                "by their own gravity and getting denser and hotter until " +
-                "they fused together form a star.";
-            phaseImageMass.sprite = massivestar;
             phaseSliderMass.value = 1;
         }
 
         else if (phaseNumberMass.text == "Phase 2: Massive Star")
         {
-            phaseNumberMass.text = "Phase 1: Stellar Nebula";
-            phaseInfoMass.text = "Huge clouds of dust and gases exist in space.";
-            phaseImageMass.sprite = nebulacloud;
             phaseSliderMass.value = 0;
         }
 
@@ -108,40 +68,55 @@ public class changePhaseMassStar : MonoBehaviour
         if(phaseSliderMass.value == 0)
         {
             phaseNumberMass.text = "Phase 1: Stellar Nebula";
-            phaseInfoMass.text = "Huge clouds of dust and gases exist in space.";
+            phaseInfoMass.text = "Huge clouds of hydrogen gas and dust exist" +
+                " in space.The existing stars that are formed within it" +
+                " energised the gas in the stellar nebula making it glows" +
+                " brightly in space.";
             phaseImageMass.sprite = nebulacloud;
         }
         if (phaseSliderMass.value == 1)
         {
             phaseNumberMass.text = "Phase 2: Massive Star";
-            phaseInfoMass.text = "The dust and gases are attracted to each other " +
-                "by their own gravity and getting denser and hotter until " +
-                "they fused together form a star.";
+            phaseInfoMass.text = "The gases are so huge that they " +
+                "attracted to each other by their own gravity and got " +
+                "denser until they fused together and formed a star." +
+                " If the combined mass of the gases are above eight" +
+                " solar masses, it will form a massive star.In this phase," +
+                " hydrogen is fused into helium in a process called nuclear" +
+                " fussion where it produces heat energy and light.";
             phaseImageMass.sprite = massivestar;
         }
         if (phaseSliderMass.value == 2)
         {
             phaseNumberMass.text = "Phase 3: Red Super Giant";
             phaseInfoMass.text = "After the star has run out of hydrogen, " +
-                "it will lose its hydrostatic equilibrium and it is going to " +
-                "collapse again until the heliums themselves will be used as " +
-                "an energy source, which will then expand the star even more.";
+                "it will lose its inner gas pressure (that it gets from" +
+                " nuclear fussion reaction) and it is going to " +
+                "collapse inward due to its own gravity until the heliums" +
+                " inside the star will started to fused with each other and" +
+                " produced more energy and expand the star even more to " +
+                "form a red super giant.";
             phaseImageMass.sprite = redsupergiant;
         }
         if (phaseSliderMass.value == 3)
         {
             phaseNumberMass.text = "Phase 4: Supernova";
-            phaseInfoMass.text = "The star expand so much that its outer " +
-                "atmosphere drifted out from the star in a process called " +
-                "supernova explosion.";
+            phaseInfoMass.text = "The star contains so much energy that" +
+            	" it eventually explodes. This process is called supernova" +
+            	" explosion. This explosion happens in a very short period" +
+            	" of time and it is brigther than 100 million suns."; 
             phaseImageMass.sprite = nebulacloud;
         }
         if (phaseSliderMass.value == 4)
         {
-            phaseNumberMass.text = "Phase 5: Black Hole";
-            phaseInfoMass.text = "The remnants of the massive star is the " +
-                "black hole, which is the core of the star. It is incredibly " +
-                "dense and hot.";
+            phaseNumberMass.text = "Phase 5: Neutron Star / Black Hole";
+            phaseInfoMass.text = "Supernova explosion caused the existing" +
+            	" protons and electrons from the star to fused together" +
+            	" and stabilized only by the neutron degenaracy pressure." +
+            	" This will result in the forming of neuron star, which has" +
+            	" a mass of three times solar mass with only 20km in" +
+            	" diameter. Denser neutron stars will collapse into" +
+            	" itself and form a black hole.";
             phaseImageMass.sprite = blackhole;
         }
     }

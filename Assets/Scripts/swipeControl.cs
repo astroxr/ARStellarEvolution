@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class swipeControl : MonoBehaviour
 {
     public Vector2 startTouch, endTouch;
-    public float swipeLength = 100; 
+    public float swipeLength = 80; 
     public float swipeRead;
     public Slider phaseSlider;
 

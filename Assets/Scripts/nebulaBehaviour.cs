@@ -9,7 +9,7 @@ public class nebulaBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nebulaSize = 0.5f;
+        nebulaSize = 0.05f;
     }
 
     // Update is called once per frame
@@ -17,8 +17,8 @@ public class nebulaBehaviour : MonoBehaviour
     {
         if (transform.localScale.x > 0)
         {
-            transform.localScale -= new Vector3(0.1f * Time.deltaTime,
-            0.1f * Time.deltaTime, 0.1f * Time.deltaTime);
+            transform.localScale -= new Vector3(0.01f * Time.deltaTime,
+            0.01f * Time.deltaTime, 0.01f * Time.deltaTime);
         }
 
         else
