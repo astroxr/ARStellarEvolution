@@ -20,10 +20,10 @@ public class starBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (getStarSurface.starSurfaceSize > 0.1)
+        if (getStarSurface.starSurfaceSize > 0.15f)
         {
-            starColor.r += 0.08f * Time.deltaTime;
-            starColor.b -= 0.25f * Time.deltaTime;
+            starColor.r += 0.1f * Time.deltaTime;
+            starColor.b -= 0.27f * Time.deltaTime;
             rend.material.SetColor("_EmissionColor", starColor);
         }
     }

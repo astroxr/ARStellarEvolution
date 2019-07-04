@@ -81,8 +81,8 @@ public class changePhaseMassStar : MonoBehaviour
                 "attracted to each other by their own gravity and got " +
                 "denser until they fused together and formed a star." +
                 " If the combined mass of the gases are above eight" +
-                " solar masses, it will form a massive star.In this phase," +
-                " hydrogen is fused into helium in a process called nuclear" +
+                " solar masses, it will form a massive star. In this phase," +
+                " hydrogens are fused into heliums in a process called nuclear" +
                 " fussion where it produces heat energy and light.";
             phaseImageMass.sprite = massivestar;
         }
@@ -92,9 +92,9 @@ public class changePhaseMassStar : MonoBehaviour
             phaseInfoMass.text = "After the star has run out of hydrogen, " +
                 "it will lose its inner gas pressure (that it gets from" +
                 " nuclear fussion reaction) and it is going to " +
-                "collapse inward due to its own gravity until the heliums" +
-                " inside the star will started to fused with each other and" +
-                " produced more energy and expand the star even more to " +
+                "collapse inward due to its own gravity until the" +
+                " heliums fused into carbons which will then produced" +
+                " more energy and expand the star even more to " +
                 "form a red super giant.";
             phaseImageMass.sprite = redsupergiant;
         }
@@ -104,7 +104,7 @@ public class changePhaseMassStar : MonoBehaviour
             phaseInfoMass.text = "The star contains so much energy that" +
             	" it eventually explodes. This process is called supernova" +
             	" explosion. This explosion happens in a very short period" +
-            	" of time and it is brigther than 100 million suns."; 
+            	" of time and it is brighter than 100 million suns."; 
             phaseImageMass.sprite = nebulacloud;
         }
         if (phaseSliderMass.value == 4)

@@ -80,10 +80,10 @@ public class changePhase : MonoBehaviour
             phaseNumber.text = "Phase 2: Average Star";
             phaseInfo.text = "The gases are so huge that they " +
                 "attracted to each other by their own gravity and got " +
-                "denser until they fused together and formed a star." +
+                "denser until they clumped together and formed a star." +
                 " If the combined mass of the gases are below eight" +
-                " solar masses, it will form an average star.In this phase," +
-                " hydrogen is fused into helium in a process called nuclear" +
+                " solar masses, it will form an average star. In this phase," +
+                " hydrogens are fused into heliums in a process called nuclear" +
                 " fussion where it produces heat energy and light.";
             phaseImage.sprite = lowmassstar;
         }
@@ -93,9 +93,9 @@ public class changePhase : MonoBehaviour
             phaseInfo.text = "After the star has run out of hydrogen, " +
                 "it will lose its inner gas pressure (that it gets from" +
                 " nuclear fussion reaction) and it is going to " +
-                "collapse inward due to its own gravity until the heliums" +
-                " inside the star will started to fused with each other and" +
-                " produced more energy and expand the star even more to " +
+                "collapse inward due to its own gravity until the" +
+                " heliums fused into carbons which will then produced" +
+                " more energy and expand the star even more to " +
                 "form a red giant.";
             phaseImage.sprite = redgiant;
         }
@@ -103,7 +103,7 @@ public class changePhase : MonoBehaviour
         {
             phaseNumber.text = "Phase 4: Planetary Nebula";
             phaseInfo.text = "The star expand so much that its outer " +
-                "atmosphere drifted out from the star and formed" +
+                "atmosphere drifted out from the star and form" +
                 " a planetary nebula.";
             phaseImage.sprite = nebulacloud;
         }

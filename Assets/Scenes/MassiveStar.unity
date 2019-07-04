@@ -177,13 +177,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'The gases are so huge that they attracted to each other by their own gravity
-    and got denser until they fused together and formed a star. If the combined mass
-    of the gases are above eight solar masses, it will form a massive star.In this
-    phase, hydrogen is fused into helium in a process called nuclear fussion where
-    it produces heat energy and light.
-
-'
+  m_text: "Massive stars can have mass more than 100 times solar mass. It is however,
+    does not maintain this phase as long as average stars. It can only exist in this
+    phase around millions of years, compared to average stars which can live up to
+    billions of years. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -252,12 +249,12 @@ MonoBehaviour:
   m_margin: {x: -316.4866, y: -18.16217, z: -587.1915, w: -381.40298}
   m_textInfo:
     textComponent: {fileID: 101436082}
-    characterCount: 351
+    characterCount: 255
     spriteCount: 0
-    spaceCount: 64
-    wordCount: 65
+    spaceCount: 48
+    wordCount: 47
     linkCount: 0
-    lineCount: 8
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1376,8 +1373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.850647, y: -676}
-  m_SizeDelta: {x: 100, y: 380}
+  m_AnchoredPosition: {x: 7.850647, y: -692}
+  m_SizeDelta: {x: 100, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1867987168
 GameObject:

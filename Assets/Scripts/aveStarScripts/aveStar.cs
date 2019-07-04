@@ -20,7 +20,7 @@ public class aveStar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (getAveStarSurface.aveStarSurfaceSize > 0.1)
+        if (getAveStarSurface.aveStarSurfaceSize > 0.15f)
         {
             if(aveStarColor.r > 0.6431373f)
             {
