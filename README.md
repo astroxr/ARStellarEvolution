@@ -7,5 +7,3 @@ Highlights and updates so far:
    problem exporting it into iOS (haven't tried Android yet).
 
 2. The functionality of the app is complete.
-
-3. Lastly need to redesign supernova phase and transitions from nebulas phases to others in AR.
