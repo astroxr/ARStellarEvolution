@@ -8,12 +8,19 @@ public class changePhaseMassStar : MonoBehaviour
 {
     public TextMeshProUGUI phaseNumberMass;
     public TextMeshProUGUI phaseInfoMass;
-    public Image phaseImageMass;
+    public Image phaseImageMass, phaseImageMass2;
     public Slider phaseSliderMass;
-    public Sprite nebulacloud;
-    public Sprite massivestar;
-    public Sprite redsupergiant;
-    public Sprite blackhole;
+    public Sprite nebulacloud, massivestar, redsupergiant, supernova,
+    neutronstar, blackhole;
+
+    public void Start()
+    {
+        phaseImageMass2.enabled = false;
+        if(phaseImageMass.sprite == neutronstar)
+        {
+            phaseImageMass2.enabled = true;
+        }
+    }
 
     public void ChangeToNextTextMass()
     {
@@ -72,7 +79,9 @@ public class changePhaseMassStar : MonoBehaviour
                 " in space.The existing stars that are formed within it" +
                 " energised the gas in the stellar nebula making it glows" +
                 " brightly in space.";
+            phaseImageMass.transform.localPosition = new Vector3(0, -394, 0);
             phaseImageMass.sprite = nebulacloud;
+            phaseImageMass2.enabled = false;
         }
         if (phaseSliderMass.value == 1)
         {
@@ -84,7 +93,9 @@ public class changePhaseMassStar : MonoBehaviour
                 " solar masses, it will form a massive star. In this phase," +
                 " hydrogens are fused into heliums in a process called nuclear" +
                 " fussion where it produces heat energy and light.";
+            phaseImageMass.transform.localPosition = new Vector3(0, -394, 0);
             phaseImageMass.sprite = massivestar;
+            phaseImageMass2.enabled = false;
         }
         if (phaseSliderMass.value == 2)
         {
@@ -96,7 +107,9 @@ public class changePhaseMassStar : MonoBehaviour
                 " heliums fused into carbons which will then produced" +
                 " more energy and expand the star even more to " +
                 "form a red super giant.";
+            phaseImageMass.transform.localPosition = new Vector3(0, -394, 0);
             phaseImageMass.sprite = redsupergiant;
+            phaseImageMass2.enabled = false;
         }
         if (phaseSliderMass.value == 3)
         {
@@ -104,8 +117,10 @@ public class changePhaseMassStar : MonoBehaviour
             phaseInfoMass.text = "The star contains so much energy that" +
             	" it eventually explodes. This process is called supernova" +
             	" explosion. This explosion happens in a very short period" +
-            	" of time and it is brighter than 100 million suns."; 
-            phaseImageMass.sprite = nebulacloud;
+            	" of time and it is brighter than 100 million suns.";
+            phaseImageMass.transform.localPosition = new Vector3(0, -394, 0);
+            phaseImageMass.sprite = supernova;
+            phaseImageMass2.enabled = false;
         }
         if (phaseSliderMass.value == 4)
         {
@@ -117,7 +132,9 @@ public class changePhaseMassStar : MonoBehaviour
             	" a mass of three times solar mass with only 20km in" +
             	" diameter. Denser neutron stars will collapse into" +
             	" itself and form a black hole.";
-            phaseImageMass.sprite = blackhole;
+            phaseImageMass.sprite = neutronstar;
+            phaseImageMass2.enabled = true;
+            phaseImageMass.transform.localPosition = new Vector3(-271, -394, 0);
         }
     }
 }

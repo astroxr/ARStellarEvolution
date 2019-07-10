@@ -31,7 +31,11 @@ public class coronaBehavior : MonoBehaviour
         {
             transform.localScale += new Vector3(0.02f * Time.deltaTime,
             0.02f * Time.deltaTime, 0.02f * Time.deltaTime);
-            coronaColor.startColor = new ParticleSystem.MinMaxGradient(Color.yellow);
+            if (transform.localScale.x > 0.2f)
+            {
+                coronaColor.startColor = new ParticleSystem.MinMaxGradient(new Color(0.9339623f, 0.9327107f, 0.02202741f));
+            }
+
         }
     }
 }

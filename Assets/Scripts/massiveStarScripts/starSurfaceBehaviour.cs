@@ -7,7 +7,7 @@ public class starSurfaceBehaviour : MonoBehaviour
     public double starSurfaceSize;
     ParticleSystem.MainModule surfaceColor;
     public float delay = 8f;
-    float countdown;
+    float countdown, secondcountdown;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,7 @@ public class starSurfaceBehaviour : MonoBehaviour
         starSurfaceSize = 0.15;
         surfaceColor = GetComponent<ParticleSystem>().main;
         countdown = delay;
+        secondcountdown = delay;
 
     }
 
@@ -39,13 +40,17 @@ public class starSurfaceBehaviour : MonoBehaviour
             if (transform.localScale.x > 0.2f)
             {
                 starSurfaceSize = 0.2;
-                surfaceColor.startColor = new ParticleSystem.MinMaxGradient(Color.red);
+                surfaceColor.startColor = new ParticleSystem.MinMaxGradient(new Color(0.9150943f, 0.125178f, 0.1557938f));
             }
         }
         else
         {
-            starSurfaceSize = 0.3;
-            Destroy(gameObject);
+            secondcountdown -= Time.deltaTime;
+            if (secondcountdown <= 0)
+            {
+                starSurfaceSize = 0.3;
+                Destroy(gameObject);
+            }
         }
     }
 }

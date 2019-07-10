@@ -7,7 +7,7 @@ public class aveStarSur : MonoBehaviour
     public double aveStarSurfaceSize;
     ParticleSystem.MainModule aveSurfaceColor;
     public float delay = 8f;
-    float countdown;
+    float countdown, secondcountdown;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,7 @@ public class aveStarSur : MonoBehaviour
         aveStarSurfaceSize = 0.15;
         aveSurfaceColor = GetComponent<ParticleSystem>().main;
         countdown = delay;
+        secondcountdown = delay;
 
     }
 
@@ -44,8 +45,13 @@ public class aveStarSur : MonoBehaviour
         }
         else
         {
-            aveStarSurfaceSize = 0.3;
-            Destroy(gameObject);
+            secondcountdown -= Time.deltaTime;
+            if (secondcountdown <= 0)
+            {
+                aveStarSurfaceSize = 0.3;
+                Destroy(gameObject);
+            }
+
         }
     }
 }

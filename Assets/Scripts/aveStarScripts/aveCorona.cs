@@ -31,7 +31,10 @@ public class aveCorona : MonoBehaviour
         {
             transform.localScale += new Vector3(0.02f * Time.deltaTime,
             0.02f * Time.deltaTime, 0.02f * Time.deltaTime);
-            aveCoronaColor.startColor = new ParticleSystem.MinMaxGradient(new Color(0.8490566f, 0.8490566f, 0.5166429f));
+            if (transform.localScale.x > 0.2f)
+            {
+                aveCoronaColor.startColor = new ParticleSystem.MinMaxGradient(new Color(0.8490566f, 0.8490566f, 0.5166429f));
+            }
 
         }
     }

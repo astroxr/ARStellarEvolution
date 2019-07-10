@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class superNovaBehaviour : MonoBehaviour
 {
-    public GameObject energyExplode;
-    public GameObject starSurface;
-    public GameObject deadStar;
+    public GameObject starSurface, deadStar, ember, explodeDust0;
     public starSurfaceBehaviour getStarSurface;
 
     // Start is called before the first frame update
     void Start()
     {
         getStarSurface = starSurface.GetComponent<starSurfaceBehaviour>();
-        energyExplode.SetActive(false);
+        explodeDust0.SetActive(false);
+        ember.SetActive(false);
         deadStar.SetActive(false);
     }
 
@@ -22,7 +21,8 @@ public class superNovaBehaviour : MonoBehaviour
     {
         if (getStarSurface.starSurfaceSize == 0.3)
         {
-            energyExplode.SetActive(true);
+            explodeDust0.SetActive(true);
+            ember.SetActive(true);
             deadStar.SetActive(true);
         }
         

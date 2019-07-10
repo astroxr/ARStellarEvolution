@@ -10,10 +10,7 @@ public class changePhase : MonoBehaviour
     public TextMeshProUGUI phaseInfo;
     public Image phaseImage;
     public Slider phaseSlider;
-    public Sprite nebulacloud;
-    public Sprite lowmassstar;
-    public Sprite redgiant;
-    public Sprite whitedwarf;
+    public Sprite nebulacloud,lowmassstar,redgiant,planetarynebula,whitedwarf;
 
 
     public void ChangeToNextText()
@@ -105,7 +102,7 @@ public class changePhase : MonoBehaviour
             phaseInfo.text = "The star expand so much that its outer " +
                 "atmosphere drifted out from the star and form" +
                 " a planetary nebula.";
-            phaseImage.sprite = nebulacloud;
+            phaseImage.sprite = planetarynebula;
         }
         else if (phaseSlider.value == 4)
         {

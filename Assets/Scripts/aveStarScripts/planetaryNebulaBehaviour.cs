@@ -6,15 +6,13 @@ public class planetaryNebulaBehaviour : MonoBehaviour
 {
     public GameObject aveStarSurface, deadStar, planetaryNebula0,
     planetaryNebula1, planetaryNebula2, planetaryNebula3, planetaryNebula4,
-    planetaryNebula5, planetaryNebula6, outerAtmosphere, outerAtmosphereCorona,
-    explosionDust;
+    planetaryNebula5, planetaryNebula6, outerAtmosphere, outerAtmosphereCorona;
     public aveStarSur getAveStarSurface;
 
     void Start()
     {
         getAveStarSurface = aveStarSurface.GetComponent<aveStarSur>();
         deadStar.SetActive(false);
-        explosionDust.SetActive(false);
     }
 
     void Update()
@@ -22,7 +20,6 @@ public class planetaryNebulaBehaviour : MonoBehaviour
         if (getAveStarSurface.aveStarSurfaceSize == 0.3)
         {
             deadStar.SetActive(true);
-            explosionDust.SetActive(true);
 
             if (planetaryNebula0.transform.localScale.x < 0.15)
             {

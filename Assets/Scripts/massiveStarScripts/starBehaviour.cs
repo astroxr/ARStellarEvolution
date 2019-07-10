@@ -22,8 +22,17 @@ public class starBehaviour : MonoBehaviour
     {
         if (getStarSurface.starSurfaceSize > 0.15f)
         {
-            starColor.r += 0.1f * Time.deltaTime;
-            starColor.b -= 0.27f * Time.deltaTime;
+            if(starColor.r < 0.5660378){
+                starColor.r += 0.1f * Time.deltaTime;
+            }
+            if(starColor.b > 0)
+            {
+                starColor.b -= 0.27f * Time.deltaTime;
+            }
+            if(starColor.g > 0)
+            {
+                starColor.b -= 0.1f * Time.deltaTime;
+            }
             rend.material.SetColor("_EmissionColor", starColor);
         }
     }
